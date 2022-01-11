@@ -71,6 +71,7 @@ func main() {
 		panic("服务端监听失败" + err.Error())
 	}
 	h := &Handler{Listener: listener, ClientPool: make(map[string]*Client)}
+	// 监听内网节点连接,交换彼此的公网 IP 和端口
 	h.Handle()
 	time.Sleep(time.Hour) // 防止主线程退出
 }
