@@ -2,6 +2,8 @@
 
 P2P Golang 内网穿透实现
 
+原理说明(请看我这篇博客): https://www.xhyonline.com/?p=1612
+
 NAT 类型: 端口限制锥形 (NAT3)
 
 ## 一、示例说明:
